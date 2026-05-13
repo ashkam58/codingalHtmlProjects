@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 3 - Average Calculator</title>
+    <style>
+        body { font-family: sans-serif; background: #111827; color: #f3f4f6; margin: 40px auto; max-width: 600px; }
+        .card { background: #1f2937; padding: 30px; border-radius: 12px; }
+        div { margin-bottom: 15px; }
+        select, input[type="number"] { padding: 8px; margin-right: 10px; }
+        output { font-weight: bold; color: #34d399; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Average Calculator</h2>
+        <form oninput="result.value = ((parseInt(m1.value || 0) + parseInt(m2.value || 0) + parseInt(m3.value || 0)) / 3).toFixed(2)">
+            <div>
+                <select><option>Maths</option><option>Science</option></select>
+                <input type="number" id="m1" placeholder="Marks" min="0" max="100">
+            </div>
+            <div>
+                <select><option>English</option><option>Science</option></select>
+                <input type="number" id="m2" placeholder="Marks" min="0" max="100">
+            </div>
+            <div>
+                <select><option>Science</option><option>Maths</option></select>
+                <input type="number" id="m3" placeholder="Marks" min="0" max="100">
+            </div>
+            <div>
+                <strong>Average: </strong> <output name="result">0.00</output>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 2 - Group Form Fields</title>
+    <style>
+        body { font-family: sans-serif; background: #111827; color: #f3f4f6; margin: 40px auto; max-width: 600px; }
+        .card { background: #1f2937; padding: 30px; border-radius: 12px; }
+        fieldset { border: 1px solid #60a5fa; border-radius: 8px; padding: 20px; }
+        legend { color: #93c5fd; font-weight: bold; padding: 0 10px; }
+        div { margin-bottom: 15px; }
+        input[type="text"], input[type="date"] { width: 100%; padding: 8px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" placeholder="Enter Name">
+                </div>
+                <div>
+                    <label>Birthday:</label><br>
+                    <input type="date" name="birthday">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

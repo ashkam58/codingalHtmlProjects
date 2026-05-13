@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 1 - Personal Details Form</title>
+    <style>
+        body { font-family: sans-serif; background: #111827; color: #f3f4f6; margin: 40px auto; max-width: 600px; }
+        .card { background: #1f2937; padding: 30px; border-radius: 12px; }
+        div { margin-bottom: 15px; }
+        input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        input[type="submit"] { background: #2563eb; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Personal Details</h2>
+        <form>
+            <div><label>Name:</label><br><input type="text" name="name" required></div>
+            <div><label>Email:</label><br><input type="email" name="email" required></div>
+            <div><label>Contact Number (Masked):</label><br><input type="password" name="contact" required></div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div>
+                <label>Favourite City:</label>
+                <input type="checkbox" name="city" value="ny"> New York
+                <input type="checkbox" name="city" value="paris"> Paris
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
